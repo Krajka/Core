@@ -17,6 +17,12 @@ int main()
 
 	c = b.Sub(a);
 
+	Vector3f e;
+
+	e = b.Add(a);
+
+	cout << e.X << e.Y << e.Z << endl;
+
 	cout << c.X << c.Y << c.Z << endl;
 
 	float d = sqrtf(c.X*c.X + c.Y*c.Y + c.Z*c.Z);

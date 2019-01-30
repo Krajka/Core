@@ -14,6 +14,7 @@ namespace core
 			float Z = 0;
 
 			Vector3f Sub(Vector3f v);
+			Vector3f Add(Vector3f v);
 		};
 	}
 }

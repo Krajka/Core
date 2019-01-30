@@ -11,3 +11,13 @@ Vector3f Vector3f::Sub(Vector3f v)
 	result.Z = Z - v.Z;
 	return result;
 }
+
+//-------------------------------------------------------------------
+Vector3f core::math::Vector3f::Add(Vector3f v)
+{
+	Vector3f result;
+	result.X = X + v.X;
+	result.Y = Y + v.Y;
+	result.Z = Z + v.Z;
+	return result;
+}

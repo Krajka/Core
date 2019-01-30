@@ -15,6 +15,7 @@ namespace core
 
 			Vector3f Sub(Vector3f v);
 			Vector3f Add(Vector3f v);
+			Vector3f Mul(float s);
 		};
 	}
 }

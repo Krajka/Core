@@ -15,22 +15,10 @@ int main()
 
 	Vector3f c;
 
-	c = b.Sub(a);
+	c = a.Mul(5);
 
-	Vector3f e;
-
-	e = b.Add(a);
-
-	cout << e.X << e.Y << e.Z << endl;
-
-	cout << c.X << c.Y << c.Z << endl;
-
-	float d = sqrtf(c.X*c.X + c.Y*c.Y + c.Z*c.Z);
-
-	cout << d << endl;
-
-
-
+	cout << c.X << ", " << c.Y << ", " << c.Z  << endl;
+	
 	system("pause");
 	return 0;
 }

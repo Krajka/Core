@@ -1,25 +1,10 @@
 #include <iostream>
 #include <math.h>
 
+#include "Src/Math/Vector3f.hpp"
+
 using namespace std;
-
-class Vector3f
-{
-public:
-
-	float X = 0;
-	float Y = 0;
-	float Z = 0;
-
-	Vector3f Sub(Vector3f v)
-	{
-		Vector3f result;
-		result.X = X - v.X;
-		result.Y = Y - v.Y;
-		result.Z = Z - v.Z;
-		return result;
-	}
-};
+using namespace core::math;
 
 int main()
 {

@@ -15,7 +15,7 @@ int main()
 
 	Vector3f c;
 
-	c = a.Mul(5);
+	c = a.Cross(b);
 
 	cout << c.X << ", " << c.Y << ", " << c.Z  << endl;
 	

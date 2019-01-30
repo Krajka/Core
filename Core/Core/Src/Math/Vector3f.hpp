@@ -16,6 +16,10 @@ namespace core
 			Vector3f Sub(Vector3f v);
 			Vector3f Add(Vector3f v);
 			Vector3f Mul(float s);
+			Vector3f Div(float s);
+
+			float Dot(Vector3f v);
+			Vector3f Cross(Vector3f v);
 		};
 	}
 }

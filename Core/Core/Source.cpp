@@ -6,11 +6,19 @@ using namespace std;
 class Vector3f
 {
 public:
-	float X;
-	float Y;
-	float Z;
 
-	// Vector3f Sub 
+	float X = 0;
+	float Y = 0;
+	float Z = 0;
+
+	Vector3f Sub(Vector3f v)
+	{
+		Vector3f result;
+		result.X = X - v.X;
+		result.Y = Y - v.Y;
+		result.Z = Z - v.Z;
+		return result;
+	}
 };
 
 int main()
@@ -22,9 +30,7 @@ int main()
 
 	Vector3f c;
 
-	c.X = b.X - a.X;
-	c.Y = b.Y - a.Y;
-	c.Z = b.Z - a.Z;
+	c = b.Sub(a);
 
 	cout << c.X << c.Y << c.Z << endl;
 

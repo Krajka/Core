@@ -2,6 +2,15 @@
 
 using namespace core::math;
 
+Vector3f core::math::Vector3f::operator+(Vector3f const & v)
+{
+	Vector3f result;
+	result.X = X + v.X;
+	result.Y = Y + v.Y;
+	result.Z = Z + v.Z;
+	return result;
+}
+
 //-------------------------------------------------------------------
 Vector3f Vector3f::Sub(Vector3f v)
 {
@@ -13,14 +22,14 @@ Vector3f Vector3f::Sub(Vector3f v)
 }
 
 //-------------------------------------------------------------------
-Vector3f core::math::Vector3f::Add(Vector3f v)
-{
-	Vector3f result;
-	result.X = X + v.X;
-	result.Y = Y + v.Y;
-	result.Z = Z + v.Z;
-	return result;
-}
+//Vector3f core::math::Vector3f::Add(Vector3f v)
+//{
+//	Vector3f result;
+//	result.X = X + v.X;
+//	result.Y = Y + v.Y;
+//	result.Z = Z + v.Z;
+//	return result;
+//}
 
 //-------------------------------------------------------------------
 Vector3f core::math::Vector3f::Mul(float s)

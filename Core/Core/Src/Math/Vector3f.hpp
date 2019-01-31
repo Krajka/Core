@@ -13,6 +13,8 @@ namespace core
 			float Y = 0;
 			float Z = 0;
 
+			Vector3f operator + (Vector3f const &obj);
+
 			Vector3f Sub(Vector3f v);
 			Vector3f Add(Vector3f v);
 			Vector3f Mul(float s);

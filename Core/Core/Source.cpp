@@ -15,7 +15,7 @@ int main()
 
 	Vector3f c;
 
-	c = a.Cross(b);
+	c = a + b;
 
 	cout << c.X << ", " << c.Y << ", " << c.Z  << endl;
 	

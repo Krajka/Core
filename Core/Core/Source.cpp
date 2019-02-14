@@ -12,6 +12,7 @@ int main()
 
 	Vector3f a { 1, 2, 3 };
 	Vector3f b { 4, 5, 6 };
+	Vector3f u{ 2, 0, 3 };
 
 	Vector3f c, d, e, f;
 
@@ -27,8 +28,9 @@ int main()
 	f = a / 2;
 	cout << f.X << ", " << f.Y << ", " << f.Z << endl;
 
+	Matrix3x3f t;
 	Matrix3x3f m { {1, 2, 3}, {4, 5, 6}, {1, 2, 3} };
-
+	t = m * u;
 
 	system("pause");
 	return 0;

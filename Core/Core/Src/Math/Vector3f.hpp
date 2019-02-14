@@ -8,10 +8,14 @@ namespace core
 		class Vector3f
 		{
 		public:
-			float X = 0;
-			float Y = 0;
-			float Z = 0;
-			float Coord[3] = { X,Y,Z };
+			
+			//float Coord[3] = { X,Y,Z };
+
+			union
+			{
+				float Coord[3];
+				struct { float X, Y, Z; };
+			};
 			
 
 			Vector3f operator + (Vector3f const &v);
@@ -33,6 +37,7 @@ namespace core
 		//------------------------------------------------------------------
 		class Matrix3x3f
 		{
+		public:
 			//Vector3f Data[3] = { {0, 0, 0}, { 0, 0, 0 }, { 0, 0, 0 } };
 			float Data[3][3] = { {0, 0, 0}, { 0, 0, 0 }, { 0, 0, 0 } };
 			Matrix3x3f operator * (Vector3f const &v);

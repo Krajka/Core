@@ -13,12 +13,15 @@ namespace core
 			float Y = 0;
 			float Z = 0;
 
-			Vector3f operator + (Vector3f const &obj);
+			Vector3f operator + (Vector3f const &v);
+			Vector3f operator - (Vector3f const &v);
+			Vector3f operator * (float s);
+			Vector3f operator / (float s);
 
-			Vector3f Sub(Vector3f v);
-			Vector3f Add(Vector3f v);
-			Vector3f Mul(float s);
-			Vector3f Div(float s);
+			//Vector3f Sub(Vector3f v);
+			//Vector3f Add(Vector3f v);
+			//Vector3f Mul(float s);
+			//Vector3f Div(float s);
 
 			float Dot(Vector3f v);
 			Vector3f Cross(Vector3f v);

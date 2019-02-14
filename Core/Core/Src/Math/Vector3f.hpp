@@ -9,6 +9,7 @@ namespace core
 		{
 		public:
 
+			float Coord[3];
 			float X = 0;
 			float Y = 0;
 			float Z = 0;
@@ -25,6 +26,18 @@ namespace core
 
 			float Dot(Vector3f v);
 			Vector3f Cross(Vector3f v);
+
+			
 		};
+		
+		//------------------------------------------------------------------
+		class Matrix3x3f
+		{
+			//Vector3f Data[3] = { {0, 0, 0}, { 0, 0, 0 }, { 0, 0, 0 } };
+			float Data[3][3] = { {0, 0, 0}, { 0, 0, 0 }, { 0, 0, 0 } };
+			int Data = 0;
+			Matrix3x3f operator * (Vector3f const &v);
+		};
+
 	}
 }

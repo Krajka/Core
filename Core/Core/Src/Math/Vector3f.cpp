@@ -93,3 +93,16 @@ Vector3f core::math::Vector3f::Cross(Vector3f v)
 	result.Z = X * v.Y - Y * v.X;
 	return result;
 }
+
+Matrix3x3f core::math::Matrix3x3f::operator*(Vector3f const & v)
+{
+	Matrix3x3f result;
+	//Matrix3x3f **result;
+	for (int i = 0; i < 3; i++)
+	{
+		for (int j=0; j<3; j++)
+		result.Data[i][j]=
+	}
+	
+	return result;
+}

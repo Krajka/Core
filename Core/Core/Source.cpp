@@ -12,7 +12,7 @@ int main()
 
 	Vector3f a { 1, 2, 3 };
 	Vector3f b { 4, 5, 6 };
-	Vector3f u { 2, 0, 3 };
+	Vector3f u { 2, 3, 10 };
 
 	Vector3f c, d, e, f;
 
@@ -29,12 +29,12 @@ int main()
 	cout << f.X << ", " << f.Y << ", " << f.Z << endl;
 
 	Matrix3x3f t;
-	Matrix3x3f m{ { {1, 2, 3}, {4, 5, 6}, {1, 2, 3} } };
+	Matrix3x3f m{ { {1, 2, 3}, {1, 2, 3}, {1, 2, 3} } };
 	
 	t = m * u;
 	cout << "\n";
 	
-	Matrix3x3f Show(t);
+	t.Show(t);
 
 	system("pause");
 	return 0;

@@ -69,12 +69,13 @@ Matrix3x3f core::math::Matrix3x3f::operator*(Vector3f const & v)
 	return result;
 }
 
-Matrix3x3f core::math::Matrix3x3f::Show(Matrix3x3f r)
+void core::math::Matrix3x3f::Show(const Matrix3x3f& r)
 {
 	for (int i = 0; i < 3; i++)
 	{
 		for (int j = 0; j < 3; j++)
 			std::cout << r.Data[i][j] << std::endl;
 	}
-	return Matrix3x3f();
 }
+
+

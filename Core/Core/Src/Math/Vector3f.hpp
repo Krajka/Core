@@ -39,7 +39,7 @@ namespace core
 		public:
 			float Data[3][3]= { {0, 0, 0}, { 0, 0, 0 }, { 0, 0, 0 } };
 			Matrix3x3f operator * (Vector3f const &v);
-			Matrix3x3f Show(Matrix3x3f r);
+			void Show(const Matrix3x3f& r);
 		};
 
 	}

@@ -101,8 +101,7 @@ Matrix3x3f core::math::Matrix3x3f::operator*(Vector3f const & v)
 	for (int i = 0; i < 3; i++)
 	{
 		for (int j = 0; j < 3; j++)
-			result.Data[i][j] = Data[i][j] * v[i];
+			result.Data[i][j] = Data[i][j] * v.Coord[i];
 	}
-	
 	return result;
 }

@@ -27,6 +27,8 @@ int main()
 	f = a / 2;
 	cout << f.X << ", " << f.Y << ", " << f.Z << endl;
 
+	Matrix3x3f m { {1, 2, 3}, {4, 5, 6}, {1, 2, 3} };
+
 
 	system("pause");
 	return 0;

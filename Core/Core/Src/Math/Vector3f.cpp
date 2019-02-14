@@ -2,6 +2,23 @@
 
 using namespace core::math;
 
+core::math::Vector3f::Vector3f()
+{
+	X = 0;
+	Y = 0;
+	Z = 0;
+}
+
+core::math::Matrix3x3f::Matrix3x3f()
+{
+	Data[3][3] = { {0, 0, 0}, { 0, 0, 0 }, { 0, 0, 0 } };
+}
+
+core::math::Matrix3x3f::Matrix3x3f(float d[3][3])
+{
+	Data[3][3] = d[3][3];
+}
+
 Vector3f core::math::Vector3f::operator+(Vector3f const & v)
 {
 	Vector3f result;
@@ -93,6 +110,8 @@ Vector3f core::math::Vector3f::Cross(Vector3f v)
 	result.Z = X * v.Y - Y * v.X;
 	return result;
 }
+
+//--------------------------------------------------------------------
 
 Matrix3x3f core::math::Matrix3x3f::operator*(Vector3f const & v)
 {
